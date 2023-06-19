@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.toggleText{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.wrapper{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
