@@ -25,9 +25,14 @@
     display: flex;
     align-items: center;
     padding: 6px;
+
+    .chip{
+        color: var(--white-color);
+        background-color: #121212;
+    }
 }
 
-.chip{
+/* .chip{
     color: var(--white-color);
-    background-color: var(--black-color);
-}
+    background-color: #121212;
+} */

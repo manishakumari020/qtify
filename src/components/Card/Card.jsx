@@ -27,8 +27,31 @@ function Card({data, type}) {
                 </Tooltip>
             )
         }
+        case "song":{
+
+            const { image, likes, title, duration } = data;
+            return(
+                <Tooltip title={`${duration} Duration`} placement="top" arrow>
+                    <div className={styles.wrapper}>
+                        <div className={styles.card}>
+                            <img src={image} alt="song"/>
+                            <div className={styles.banner}>
+                                <Chip
+                                label={`${likes} Likes`}
+                                size="small"
+                                className={styles.chip} 
+                                />
+                            </div>
+                        </div>
+                        <div className={styles.titleWrapper}>
+                            <p>{title}</p>
+                        </div>
+                    </div>
+                </Tooltip>
+            )
+        }
         default:
-            return null;
+            return <></>;
      }   
     }
     return getCard(type);

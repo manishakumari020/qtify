@@ -1,0 +1,6 @@
+.cardSectionWrapper{
+    padding: 0 25px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

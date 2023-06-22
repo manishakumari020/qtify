@@ -1,0 +1,7 @@
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}

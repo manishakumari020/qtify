@@ -19,10 +19,10 @@ body {
   -webkit-font-smoothing: antialised;
 }
 img,picture,video,canvas.svg{
-  display:block;
+  display:inline-block;
   max-width: 100%;
 }
-input,button,textarea,select{
+textarea,select{
   font: inherit;
 }
 p,h1,h2,h3,h4,h5,h6{
@@ -30,4 +30,4 @@ p,h1,h2,h3,h4,h5,h6{
 }
 #root,#_next{
   isolation: isolate;
-}
+} 
