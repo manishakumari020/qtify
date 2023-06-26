@@ -28,13 +28,11 @@ function Card({data, type}) {
             )
         }
         case "song":{
-
-            const { image, likes, title, duration } = data;
+            const { image, likes, title } = data;
             return(
-                <Tooltip title={`${duration} Duration`} placement="top" arrow>
                     <div className={styles.wrapper}>
                         <div className={styles.card}>
-                            <img src={image} alt="song"/>
+                            <img src={image} alt="song" />
                             <div className={styles.banner}>
                                 <Chip
                                 label={`${likes} Likes`}
@@ -47,7 +45,6 @@ function Card({data, type}) {
                             <p>{title}</p>
                         </div>
                     </div>
-                </Tooltip>
             )
         }
         default:

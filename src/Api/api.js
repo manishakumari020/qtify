@@ -42,6 +42,17 @@ export const songs = async() => {
     }
 }
 
+export const genre = async() => {
+    try{
+        const res = await axios.get(`${bakend_endpoint}/genres`)
+        console.log(res.data);
+        return res.data;
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+
 export const faqData = async() => {
     try{
         const faqData = await axios.get(`${bakend_endpoint}/faq`)
